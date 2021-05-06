@@ -2,11 +2,12 @@
 
 ````sh
 # settings
-az-group=mslearn-scale-rg
-az-appservice-plan=mslearn-scale-plan
-az-webapp=mslearn-scale-webapp
-az-region=eastus
-az-webapp-runtime=DOTNETCORE|3.1
+
+echo -e ${az_group:=mslearn-scale-rg}
+echo -e ${az_appservice_plan:=mslearn-scale-plan}
+echo -e ${az_webapp:=mslearn-scale-webapp}
+echo -e ${az_region:=eastus}
+echo -e ${az_webapp_runtime:=DOTNETCORE|3.1}
 
 az group create -n ${az-group} -l ${az-region}  # Group Creation
 az appservice plan create -n ${az-appservice-plan} -g ${az-group} --sku S1
