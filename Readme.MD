@@ -16,5 +16,5 @@ az appservice plan create -n ${az_appservice_plan} -g ${az_group} --sku S1
 az webapp create -n ${az_webapp} -g ${az_group} -p ${az_appservice_plan} -r "${az_webapp_runtime}"
 
 # Deploy web app
-az webapp deployment source config-zip --src webapp.zip -g ${az-group} -n ${az-webapp} help
+az webapp deployment source config-zip --src webapp.zip -g ${az-group} -n ${az-webapp}
 ````
