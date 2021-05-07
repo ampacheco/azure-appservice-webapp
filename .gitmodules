@@ -1,0 +1,3 @@
+[submodule "mslearn-hotel-reservation-system"]
+	path = mslearn-hotel-reservation-system
+	url = git@github.com:MicrosoftDocs/mslearn-hotel-reservation-system.git
